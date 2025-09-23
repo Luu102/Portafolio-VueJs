@@ -7,6 +7,8 @@ import DatosPersonales from './DatosPersonales.vue';
   <header>
     <!--Barra de Navegación-->
     <NavBar />
+    <!--Datos Personales-->
+    <DatosPersonales />
   </header>
   <main>
     <section id="educacion"><h2>Educación - Cursos</h2></section>

@@ -1,5 +1,15 @@
 <script setup>
-
+const title ='Lourdes Eschler';
+const descripcion ='Técnico Universitario en Programación - UTN';
+const residencia ='San Rafael, Mendoza, Argentina';
+const presentacion ='Hola! y bienvienido a mi portafolio. Soy estudiante en la tecnicatura de programación. He aprendido a desarrollar sitios web y algoritmos capaces de solucionar problemas que podemos encontrar en la vida diaria';
+const redesSociales = [
+    {id:1, name:'linkedin', src:'/src/assets/icons/linkedin_icon.webp', url:'https://www.linkedin.com/in/lourdes-eschler-b0bb9436a/' },
+    {id:2, name:'Instagram', src:'/src/assets/icons/instagram_icon.jpg', url:'https://www.instagram.com/lourdes.__7/?next=%2F'},
+    {id:3, name:'GitHub', src: '/src/assets/icons/github_icon.png', url: ''},
+    {id:4, name:'curriculum', src:'/src/assets/icons/curriculum_logo.png', url: ''}
+];
+const telefono = '+54 9 2604-545304';
 </script>
 
 
@@ -7,19 +17,54 @@
 <template>
 <section class="datos-personales"></section>
 <div class="card">
-    <h1>Lourdes Eschler</h1>
-    <h2>Técnico Universitario en Programación - UTN</h2>
-    <p>Hola! y bienvienido a mi portafolio. Soy estudiante en la tecnicatura de programación. He aprendido a desarrollar sitios web y algoritmos capaces de solucionar problemas que podemos encontrar en la vida diaria</p>
-    <ul class="container-list">
-        <li><a href=""><img class="icon-redsocial" src="" width="35rem" alt="">linkedin</img></a></li>
-        <li><a href=""><img class="icon-redsocial" src="" widtg="35rem" alt="">Instagram</a></li>
-        <li><a href=""><img class="icon-redsocial" src="" width="35rem" alt="">GitHub</a></li>
-        <li><a href=""><img class="icon-redsocial" src="" width="35rem" alt="">Curriculom vitae</a></li>
+    <h1>{{ title }}</h1>
+    <h2>{{ descripcion }}</h2>
+    <p>{{ presentacion }}</p>
+    <ul class="container-lista">
+      <li v-for="red in redesSociales" :key="red.id">
+        <a :href="red.url"><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name"></a>
+      </li>
     </ul>
-    <h3>✆ Mi teléfono personal: +54 9 2604-545304</h3>
-    <h4>San Rafael, Mendoza, Argentina</h4>
+    <h3>✆ Mi teléfono personal: {{ telefono }}</h3>
+    <h4>{{ residencia }}</h4>
 </div>
 </template>
 
 <style scoped>
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: rgb(36, 230, 52);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.icon-redsocial {
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 50%;
+  padding: 2px;
+  margin: 5px;
+  box-shadow: 0 0 5px rgb(95, 124, 205, 0.934);
+}
+
+.icon-redsocial:hover {
+  background-color: rgb(26, 240, 7);
+  box-shadow: 0 0 5px rgb(211, 208, 218);
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 </style>
