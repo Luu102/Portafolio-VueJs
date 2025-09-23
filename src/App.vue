@@ -1,5 +1,6 @@
 <script setup>
 import NavBar from './NavBar.vue';
+import DatosPersonales from './DatosPersonales.vue';
 </script>
 
 <template>
