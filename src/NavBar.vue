@@ -21,8 +21,8 @@ const navegacion= ref([
 
 <style scoped>
 .navbar {
-  background-color: rgb(177, 245, 131);
-  color: rgb(8, 110, 63);
+  background-color: rgb(76, 158, 103);
+  color: rgb(0, 0, 0);
   padding: 0.5rem 1rem;
   align-items: center;
 }
@@ -41,7 +41,7 @@ const navegacion= ref([
 
 a {
   border: 1px solid;
-  border-color: hsl(160, 100%, 37%, 0.2);
+  border-color: hsla(160, 92%, 15%, 0.2);
   border-radius: 5px;
   text-decoration: none;
   transition: 0.4s;

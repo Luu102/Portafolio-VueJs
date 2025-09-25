@@ -6,7 +6,7 @@ const presentacion ='Hola! y bienvienido a mi portafolio. Soy estudiante en la t
 const redesSociales = [
     {id:1, name:'linkedin', src:'/src/assets/icons/linkedin_icon.webp', url:'https://www.linkedin.com/in/lourdes-eschler-b0bb9436a/' },
     {id:2, name:'Instagram', src:'/src/assets/icons/instagram_icon.jpg', url:'https://www.instagram.com/lourdes.__7/?next=%2F'},
-    {id:3, name:'GitHub', src: '/src/assets/icons/github_icon.png', url: ''},
+    {id:3, name:'GitHub', src: '/src/assets/icons/github_icon.png', url: 'https://github.com/Luu102'},
     {id:4, name:'curriculum', src:'/src/assets/icons/curriculum_logo.png', url: ''}
 ];
 const telefono = '+54 9 2604-545304';
@@ -31,6 +31,17 @@ const telefono = '+54 9 2604-545304';
 </template>
 
 <style scoped>
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
 h1 {
   font-size: 2.5rem;
 }
@@ -42,15 +53,15 @@ p {
 }
 
 .card {
-  background-color: rgb(36, 230, 52);
+  background-color: rgb(142, 212, 133);
   border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin: 50px;
   text-align: center;
 }
 
 .icon-redsocial {
-  align-items: center;
+  align-items: flex;
   background-color: aliceblue;
   border-radius: 50%;
   padding: 2px;
