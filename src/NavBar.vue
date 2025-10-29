@@ -22,13 +22,13 @@ const navegacion= ref([
 <style scoped>
 
 .navbar {
-  background-color: rgb(76, 158, 103);
+  background-color:  rgb(44, 44, 44);
   color: rgb(0, 0, 0);
   padding: 0.5rem 1rem;
   align-items: center;
 }
 .navbar-item {
-  color: rgb(0, 0, 0);
+  color: rgb(172, 172, 172);
   text-decoration: none;
   margin-right: 1rem;
 }
@@ -42,7 +42,7 @@ const navegacion= ref([
 
 a {
   border: 1px solid;
-  border-color: hsla(160, 92%, 15%, 0.2);
+  border-color: hsl(249, 28%, 45%);
   border-radius: 5px;
   text-decoration: none;
   transition: 0.4s;
@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-  background-color: hsla(0, 0%, 0%, 0.2);;
+  background-color: hsl(0, 2%, 11%);;
 }
 
 @media (max-width: 768px) {

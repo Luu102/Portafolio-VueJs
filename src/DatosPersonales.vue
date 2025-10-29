@@ -31,6 +31,13 @@ const telefono = '+54 9 2604-545304';
 </template>
 
 <style scoped>
+
+.page {
+  min-height: 100vh;
+  background: #131213;
+  padding: 20px;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -53,7 +60,7 @@ p {
 }
 
 .card {
-  background-color: rgb(142, 212, 133);
+  background-color:  rgb(44, 44, 44);
   border-radius: 10px;
   padding: 20px;
   margin: 50px;
@@ -66,11 +73,11 @@ p {
   border-radius: 50%;
   padding: 2px;
   margin: 5px;
-  box-shadow: 0 0 5px rgb(95, 124, 205, 0.934);
+  box-shadow: 0 0 5px rgba(115, 95, 205, 0.934);
 }
 
 .icon-redsocial:hover {
-  background-color: rgb(26, 240, 7);
+  background-color:  rgba(114, 90, 223, 0.76);
   box-shadow: 0 0 5px rgb(211, 208, 218);
 }
 

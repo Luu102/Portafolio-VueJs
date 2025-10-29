@@ -43,7 +43,7 @@
                 <span>Vue.js: Intermedio</span>
             </li>
             <li class="skill">
-                <img src="/src/assets/icons/node-js.png" alt="Node.js">
+                <img src="/src/assets/icons/node-js.svg" alt="Node.js">
                 <span>Node.js: Avanzado</span>
             </li>
             <li class="skill">
