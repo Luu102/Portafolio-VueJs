@@ -94,7 +94,7 @@ const eventos = [
 .year {
   font-size: 1.2rem;
   font-weight: bold;
-  color: 8747da;
+  color: #8747da;
   margin-bottom: 5px;
 }
 

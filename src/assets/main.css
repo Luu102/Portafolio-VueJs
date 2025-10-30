@@ -8,16 +8,14 @@
 }
 
 body {
-  background-color: #121212; /* color oscuro */
-  color: #ffffff;            /* texto claro para que se lea */
+  background-color: #121212;         
+  color: aliceblue; 
   margin: 0;
-  font-family: sans-serif;
 }
 
 
 a{
     text-decoration: none;
-    color: var(--vt-c-white);
 }
 
 @media (max-width: 768px) {

@@ -130,7 +130,7 @@
     justify-content: left;
     margin-bottom: 10px;
     font-size: 1.5em;
-    color: rgba(10, 78, 52, 0.963);
+    color: #8747da;
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -147,16 +147,16 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: aliceblue;
+    background-color:aliceblue;
     padding: 0.3em;
     border-radius: 8px;
-    box-shadow: 0px 4 px 12px rgba(10, 78, 52, 0.963);
+    box-shadow: 0px 4 px 12px rgba(52, 13, 102, 0.963);
     flex: 1 1 200px;
     max-width: 250px;
 }
 
 .skill:hover {
-    background-color: rgba(22, 211, 117, 0.963);
+    background-color: rgba(114, 90, 223, 0.76);
 }
 
 .skill img {
