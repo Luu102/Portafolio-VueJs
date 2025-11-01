@@ -1,8 +1,10 @@
 <script setup>
+import Experiencia from './ExperienciaCompo.vue'
 import NavBar from './NavBar.vue';
 import DatosPersonales from './DatosPersonales.vue';
 import Educacion from './Educacion.vue';
 import HabilidadesCompo from './HabilidadesCompo.vue';
+import ExperienciaCompo from './ExperienciaCompo.vue';
 </script>
 
 <template>
@@ -17,6 +19,7 @@ import HabilidadesCompo from './HabilidadesCompo.vue';
     <Educacion />
     </section>
     <section id="experiencia"><h2>Experiencia</h2></section>
+    <ExperienciaCompo />
     <section id="proyectos"><h2>Proyectos</h2></section>
     <section id="habilidades"><h2>Habilidades</h2></section>
     <HabilidadesCompo />
