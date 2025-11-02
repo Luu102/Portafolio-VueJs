@@ -1,4 +1,5 @@
 <script setup>
+import FondoLava from './FondoLava.vue';
 const title ='Lourdes Eschler';
 const descripcion ='Técnico Universitario en Programación - UTN';
 const residencia ='San Rafael, Mendoza, Argentina';
@@ -12,25 +13,63 @@ const redesSociales = [
 const telefono = '+54 9 2604-545304';
 </script>
 
-
-
 <template>
-<section class="datos-personales"></section>
-<div class="card">
-    <h1>{{ title }}</h1>
-    <h2>{{ descripcion }}</h2>
-    <p>{{ presentacion }}</p>
-    <ul class="container-lista">
-      <li v-for="red in redesSociales" :key="red.id">
-        <a :href="red.url"><img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name"></a>
-      </li>
-    </ul>
-    <h3>✆ Mi teléfono personal: {{ telefono }}</h3>
-    <h4>{{ residencia }}</h4>
-</div>
+  <section class="datos-personales">
+    <div class="tarjeta">
+      <!-- Fondo animado -->
+      <div class="fondo-lava">
+        <FondoLava />
+      </div>
+
+      <!-- Contenido -->
+      <div class="contenido">
+        <h1>{{ title }}</h1>
+        <h2>{{ descripcion }}</h2>
+        <p>{{ presentacion }}</p>
+
+        <ul class="container-lista">
+          <li v-for="red in redesSociales" :key="red.id">
+            <a :href="red.url" target="_blank">
+              <img class="icon-redsocial" :src="red.src" width="35rem" :alt="red.name" />
+            </a>
+          </li>
+        </ul>
+
+        <h3>✆ Mi teléfono personal: {{ telefono }}</h3>
+        <h4>{{ residencia }}</h4>
+      </div>
+    </div>
+  </section>
 </template>
 
+
 <style scoped>
+
+.tarjeta {
+  position: relative;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden; /* mantiene el fondo dentro del borde */
+}
+
+/* Fondo animado */
+.fondo-lava {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.35; /* controlá la intensidad */
+}
+
+/* Contenido encima del fondo */
+.contenido {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
 
 .page {
   min-height: 100vh;
@@ -60,7 +99,7 @@ p {
 }
 
 .card {
-  background-color:  rgb(44, 44, 44);
+  background-color:  transparent;
   border-radius: 10px;
   padding: 20px;
   margin: 50px;
@@ -85,4 +124,29 @@ h3 {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 380px;
+    padding: 25px 15px;
+    justify-content: center;
+  }
+
+  .card h1 {
+    font-size: 1.8rem;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+}
+
 </style>
