@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -29,8 +28,6 @@
                 </li>
             </ul>
         </div>
-    </div>
-
     <div class="skills-categoria">
         <h3>Frameworks y Librerías</h3>
         <ul class="skills">
@@ -114,6 +111,7 @@
             </li>
         </ul>
     </div>
+    </div>
 </template>
 
 <style scoped>
@@ -166,7 +164,7 @@
 
 .skill span {
     font-size: 1em;
-    color: #333;
+    color: #333333;
 }
 
 .skill:hover {

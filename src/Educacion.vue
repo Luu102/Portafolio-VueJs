@@ -1,7 +1,7 @@
 <script setup>
 const eventos = [
   { año: "2020 - 2024", titulo: "Secundario Polivalente de Arte", detalle: "Bachiller en Artes orientada a la Pintura" },
-  { año: "2025", titulo: "Tecnicatura Universitaria en Programación", detalle: "Cursando primer año" }
+  { año: "2025 - Actualidad", titulo: "Tecnicatura Universitaria en Programación", detalle: "Cursando primer año" }
 ];
 </script>
 
@@ -92,6 +92,7 @@ const eventos = [
 }
 
 .year {
+  text-align: left;
   font-size: 1.2rem;
   font-weight: bold;
   color: #8747da;
