@@ -36,7 +36,7 @@
                 <span>React.js: Avanzado</span>
             </li>
             <li class="skill">
-                <img src="/src/assets/icons/Vue.svg" alt="Vue.js">
+                <img src="/src/assets/icons/vue.svg" alt="Vue.js">
                 <span>Vue.js: Intermedio</span>
             </li>
             <li class="skill">
