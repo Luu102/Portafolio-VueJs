@@ -1,14 +1,19 @@
 <script setup>
+import linkedin from '/src/assets/icons/linkedin_icon.webp'
+import instagram from '/src/assets/icons/instagram_icon.jpg'
+import github from '/src/assets/icons/github_icon.png'
+import cv from '/src/assets/icons/curriculum_logo.png'
+
 import FondoLava from './FondoLava.vue';
 const title ='Lourdes Eschler';
 const descripcion ='Técnico Universitario en Programación - UTN';
 const residencia ='San Rafael, Mendoza, Argentina';
 const presentacion ='Hola! y bienvienido a mi portafolio. Soy estudiante en la tecnicatura de programación. He aprendido a desarrollar sitios web y algoritmos capaces de solucionar problemas que podemos encontrar en la vida diaria';
 const redesSociales = [
-    {id:1, name:'linkedin', src:'/src/assets/icons/linkedin_icon.webp', url:'https://www.linkedin.com/in/lourdes-eschler-b0bb9436a/' },
-    {id:2, name:'Instagram', src:'/src/assets/icons/instagram_icon.jpg', url:'https://www.instagram.com/lourdes.__7/?next=%2F'},
-    {id:3, name:'GitHub', src: '/src/assets/icons/github_icon.png', url: 'https://github.com/Luu102'},
-    {id:4, name:'curriculum', src:'/src/assets/icons/curriculum_logo.png', url: ''}
+    {id:1, name:'linkedin', src:linkedin, url:'https://www.linkedin.com/in/lourdes-eschler-b0bb9436a/' },
+    {id:2, name:'Instagram', src:instagram, url:'https://www.instagram.com/lourdes.__7/?next=%2F'},
+    {id:3, name:'GitHub', src:github, url: 'https://github.com/Luu102'},
+    {id:4, name:'curriculum', src:cv, url: ''}
 ];
 const telefono = '+54 9 2604-545304';
 </script>
@@ -44,6 +49,14 @@ const telefono = '+54 9 2604-545304';
 
 
 <style scoped>
+
+.telefono {
+  color: aliceblue;
+}
+
+.h3 {
+  color: aliceblue;
+}
 
 .tarjeta {
   position: relative;
